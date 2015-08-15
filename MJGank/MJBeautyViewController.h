@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MJBeautyViewController.h
 //  MJGank
 //
 //  Created by WangMinjun on 15/8/10.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface MJBeautyViewController : UIViewController
 
+@property (nonatomic, strong) UICollectionView* collectionView;
 
 @end
-

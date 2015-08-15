@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		8E365A9F1B78894900E562C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365A9E1B78894900E562C0 /* main.m */; };
 		8E365AA21B78894900E562C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365AA11B78894900E562C0 /* AppDelegate.m */; };
-		8E365AA51B78894900E562C0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365AA41B78894900E562C0 /* FirstViewController.m */; };
+		8E365AA51B78894900E562C0 /* MJBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365AA41B78894900E562C0 /* MJBeautyViewController.m */; };
 		8E365AA81B78894900E562C0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365AA71B78894900E562C0 /* SecondViewController.m */; };
 		8E365AAB1B78894900E562C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E365AA91B78894900E562C0 /* Main.storyboard */; };
 		8E365AAD1B78894900E562C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E365AAC1B78894900E562C0 /* Images.xcassets */; };
 		8E365AB01B78894900E562C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E365AAE1B78894900E562C0 /* LaunchScreen.xib */; };
 		8E365ABC1B78894900E562C0 /* MJGankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365ABB1B78894900E562C0 /* MJGankTests.m */; };
+		8E6755A91B7E3DA100514192 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755A81B7E3DA100514192 /* CHTCollectionViewWaterfallLayout.m */; };
+		8E6755B41B7EF7D100514192 /* MJGankHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755B31B7EF7D100514192 /* MJGankHTTPManager.m */; };
+		8E6755B71B7F03E100514192 /* MJImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755B61B7F03E100514192 /* MJImageCollectionViewCell.m */; };
+		8E6755BA1B7F0A5F00514192 /* MJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755B91B7F0A5F00514192 /* MJImage.m */; };
+		8E6755BD1B7F1A3700514192 /* MJBeautyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755BC1B7F1A3700514192 /* MJBeautyDetailViewController.m */; };
+		8E6755C01B7F22C600514192 /* MJMagicMovePresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755BF1B7F22C600514192 /* MJMagicMovePresentTransition.m */; };
+		8E6755CD1B7F681000514192 /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755CC1B7F681000514192 /* NormalDismissAnimation.m */; };
+		C533C65153815A065F19FE74 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 225733985829D2CC85FE7871 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225733985829D2CC85FE7871 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F05FB5D28AFC9E6AF6C288 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E365A991B78894900E562C0 /* MJGank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJGank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E365A9D1B78894900E562C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E365A9E1B78894900E562C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E365AA01B78894900E562C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E365AA11B78894900E562C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8E365AA31B78894900E562C0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		8E365AA41B78894900E562C0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8E365AA31B78894900E562C0 /* MJBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJBeautyViewController.h; sourceTree = "<group>"; };
+		8E365AA41B78894900E562C0 /* MJBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJBeautyViewController.m; sourceTree = "<group>"; };
 		8E365AA61B78894900E562C0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		8E365AA71B78894900E562C0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		8E365AAA1B78894900E562C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +53,21 @@
 		8E365AB51B78894900E562C0 /* MJGankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJGankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E365ABA1B78894900E562C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E365ABB1B78894900E562C0 /* MJGankTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJGankTests.m; sourceTree = "<group>"; };
+		8E6755A71B7E3DA100514192 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		8E6755A81B7E3DA100514192 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		8E6755B21B7EF7D100514192 /* MJGankHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGankHTTPManager.h; sourceTree = "<group>"; };
+		8E6755B31B7EF7D100514192 /* MJGankHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGankHTTPManager.m; sourceTree = "<group>"; };
+		8E6755B51B7F03E100514192 /* MJImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJImageCollectionViewCell.h; sourceTree = "<group>"; };
+		8E6755B61B7F03E100514192 /* MJImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJImageCollectionViewCell.m; sourceTree = "<group>"; };
+		8E6755B81B7F0A5F00514192 /* MJImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJImage.h; sourceTree = "<group>"; };
+		8E6755B91B7F0A5F00514192 /* MJImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJImage.m; sourceTree = "<group>"; };
+		8E6755BB1B7F1A3700514192 /* MJBeautyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBeautyDetailViewController.h; sourceTree = "<group>"; };
+		8E6755BC1B7F1A3700514192 /* MJBeautyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBeautyDetailViewController.m; sourceTree = "<group>"; };
+		8E6755BE1B7F22C600514192 /* MJMagicMovePresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMagicMovePresentTransition.h; sourceTree = "<group>"; };
+		8E6755BF1B7F22C600514192 /* MJMagicMovePresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMagicMovePresentTransition.m; sourceTree = "<group>"; };
+		8E6755CB1B7F681000514192 /* NormalDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDismissAnimation.h; sourceTree = "<group>"; };
+		8E6755CC1B7F681000514192 /* NormalDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDismissAnimation.m; sourceTree = "<group>"; };
+		E136FA6EE5F574B68D11945E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C533C65153815A065F19FE74 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +89,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D527F77C25ABC489B3A6C9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				225733985829D2CC85FE7871 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		697CD866E15A5B974A37DC51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E136FA6EE5F574B68D11945E /* Pods.debug.xcconfig */,
+				80F05FB5D28AFC9E6AF6C288 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8E365A901B78894900E562C0 = {
 			isa = PBXGroup;
 			children = (
 				8E365A9B1B78894900E562C0 /* MJGank */,
 				8E365AB81B78894900E562C0 /* MJGankTests */,
 				8E365A9A1B78894900E562C0 /* Products */,
+				697CD866E15A5B974A37DC51 /* Pods */,
+				0D527F77C25ABC489B3A6C9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,13 +131,14 @@
 			children = (
 				8E365AA01B78894900E562C0 /* AppDelegate.h */,
 				8E365AA11B78894900E562C0 /* AppDelegate.m */,
-				8E365AA31B78894900E562C0 /* FirstViewController.h */,
-				8E365AA41B78894900E562C0 /* FirstViewController.m */,
-				8E365AA61B78894900E562C0 /* SecondViewController.h */,
-				8E365AA71B78894900E562C0 /* SecondViewController.m */,
 				8E365AA91B78894900E562C0 /* Main.storyboard */,
-				8E365AAC1B78894900E562C0 /* Images.xcassets */,
+				8E6755AD1B7EF5D100514192 /* Models */,
+				8E6755AC1B7EF5CB00514192 /* Views */,
+				8E6755AB1B7EF5B200514192 /* View Controllers */,
+				8E6755AE1B7EF62B00514192 /* Services */,
+				8E6755AA1B7E3DB200514192 /* Vender */,
 				8E365AAE1B78894900E562C0 /* LaunchScreen.xib */,
+				8E365AAC1B78894900E562C0 /* Images.xcassets */,
 				8E365A9C1B78894900E562C0 /* Supporting Files */,
 			);
 			path = MJGank;
@@ -124,6 +170,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8E6755AA1B7E3DB200514192 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				8E6755A71B7E3DA100514192 /* CHTCollectionViewWaterfallLayout.h */,
+				8E6755A81B7E3DA100514192 /* CHTCollectionViewWaterfallLayout.m */,
+			);
+			name = Vender;
+			sourceTree = "<group>";
+		};
+		8E6755AB1B7EF5B200514192 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E365AA31B78894900E562C0 /* MJBeautyViewController.h */,
+				8E365AA41B78894900E562C0 /* MJBeautyViewController.m */,
+				8E6755BB1B7F1A3700514192 /* MJBeautyDetailViewController.h */,
+				8E6755BC1B7F1A3700514192 /* MJBeautyDetailViewController.m */,
+				8E365AA61B78894900E562C0 /* SecondViewController.h */,
+				8E365AA71B78894900E562C0 /* SecondViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8E6755AC1B7EF5CB00514192 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E6755B51B7F03E100514192 /* MJImageCollectionViewCell.h */,
+				8E6755B61B7F03E100514192 /* MJImageCollectionViewCell.m */,
+				8E6755BE1B7F22C600514192 /* MJMagicMovePresentTransition.h */,
+				8E6755BF1B7F22C600514192 /* MJMagicMovePresentTransition.m */,
+				8E6755CB1B7F681000514192 /* NormalDismissAnimation.h */,
+				8E6755CC1B7F681000514192 /* NormalDismissAnimation.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8E6755AD1B7EF5D100514192 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E6755B81B7F0A5F00514192 /* MJImage.h */,
+				8E6755B91B7F0A5F00514192 /* MJImage.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8E6755AE1B7EF62B00514192 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E6755B21B7EF7D100514192 /* MJGankHTTPManager.h */,
+				8E6755B31B7EF7D100514192 /* MJGankHTTPManager.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E365ABF1B78894900E562C0 /* Build configuration list for PBXNativeTarget "MJGank" */;
 			buildPhases = (
+				D04D6EC14723E10C6339472E /* Check Pods Manifest.lock */,
 				8E365A951B78894900E562C0 /* Sources */,
 				8E365A961B78894900E562C0 /* Frameworks */,
 				8E365A971B78894900E562C0 /* Resources */,
+				DB74933221A646A66D6E2A82 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,14 +320,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D04D6EC14723E10C6339472E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB74933221A646A66D6E2A82 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E365A951B78894900E562C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6755CD1B7F681000514192 /* NormalDismissAnimation.m in Sources */,
+				8E6755B71B7F03E100514192 /* MJImageCollectionViewCell.m in Sources */,
+				8E6755A91B7E3DA100514192 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				8E6755B41B7EF7D100514192 /* MJGankHTTPManager.m in Sources */,
 				8E365AA81B78894900E562C0 /* SecondViewController.m in Sources */,
+				8E6755C01B7F22C600514192 /* MJMagicMovePresentTransition.m in Sources */,
 				8E365AA21B78894900E562C0 /* AppDelegate.m in Sources */,
-				8E365AA51B78894900E562C0 /* FirstViewController.m in Sources */,
+				8E365AA51B78894900E562C0 /* MJBeautyViewController.m in Sources */,
+				8E6755BA1B7F0A5F00514192 /* MJImage.m in Sources */,
+				8E6755BD1B7F1A3700514192 /* MJBeautyDetailViewController.m in Sources */,
 				8E365A9F1B78894900E562C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +492,7 @@
 		};
 		8E365AC01B78894900E562C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E136FA6EE5F574B68D11945E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MJGank/Info.plist;
@@ -361,6 +503,7 @@
 		};
 		8E365AC11B78894900E562C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F05FB5D28AFC9E6AF6C288 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MJGank/Info.plist;
@@ -422,6 +565,7 @@
 				8E365AC11B78894900E562C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E365AC21B78894900E562C0 /* Build configuration list for PBXNativeTarget "MJGankTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +574,7 @@
 				8E365AC41B78894900E562C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
