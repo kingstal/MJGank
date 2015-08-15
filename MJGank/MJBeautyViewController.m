@@ -13,6 +13,7 @@
 #import "MJGankHTTPManager.h"
 #import "MJMagicMovePresentTransition.h"
 #import "NormalDismissAnimation.h"
+#import "MJRefresh.h"
 
 #define CELL_IDENTIFIER @"MJImageCollectionViewCell"
 
@@ -22,7 +23,10 @@
 
 @end
 
-@implementation MJBeautyViewController
+@implementation MJBeautyViewController {
+    BOOL refreshFlag;
+    NSUInteger currentPageNum;
+}
 
 #pragma mark - Accessors
 
@@ -58,22 +62,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[MJGankHTTPManager sharedManager] getDataWithType:@"福利"
-        num:10
-        pageNum:1
-        success:^(MJGankHTTPManager* manager, id data) {
-            for (NSDictionary* dict in data) {
-                MJImage* image = [[MJImage alloc] initWithURL:dict[@"url"]];
-                [self.images addObject:image];
-            }
-            [self.collectionView reloadData];
+
+    refreshFlag = YES;
+    currentPageNum = 1;
+
+    //添加上拉刷新
+    __weak __typeof(self) weakSelf = self;
+    self.collectionView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+
+        if (refreshFlag) {
+            // 进入刷新状态后会自动调用这个block
+            [weakSelf getImagesByPageNum:currentPageNum];
+            // 结束刷新
+            [weakSelf.collectionView.footer endRefreshing];
         }
-        failure:^(MJGankHTTPManager* manager, NSError* error) {
-            NSLog(@"%@", error);
-        }];
+        else {
+            [self.collectionView.footer noticeNoMoreData];
+        }
+    }];
 
     [self.view addSubview:self.collectionView];
     self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 44, 0);
+
+    // 首次刷新
+    [self getImagesByPageNum:currentPageNum];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -119,7 +131,6 @@
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     MJBeautyDetailViewController* detailVC = [MJBeautyDetailViewController new];
-    //    detailVC.image = self.images[indexPath.row];
     detailVC.images = self.images;
     detailVC.currentIndex = indexPath.row;
     detailVC.transitioningDelegate = self;
@@ -150,7 +161,11 @@
 
 - (void)beautyDetailViewControllerDidDismiss:(MJBeautyDetailViewController*)beautyDetailViewController
 {
+    //    [self.collectionView selectItemAtIndexPath:[NSIndexPath indexPathForRow:beautyDetailViewController.currentIndex inSection:0] animated:YES scrollPosition:UICollectionViewScrollPositionRight];
+
     [self dismissViewControllerAnimated:YES completion:nil];
+
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:beautyDetailViewController.currentIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
 }
 
 #pragma mark - Private
@@ -159,6 +174,31 @@
 {
     CHTCollectionViewWaterfallLayout* layout = (CHTCollectionViewWaterfallLayout*)self.collectionView.collectionViewLayout;
     layout.columnCount = UIInterfaceOrientationIsPortrait(orientation) ? 2 : 3;
+}
+
+- (void)getImagesByPageNum:(NSUInteger)pageNum
+{
+    [[MJGankHTTPManager sharedManager] getDataWithType:@"福利"
+        num:10
+        pageNum:pageNum
+        success:^(MJGankHTTPManager* manager, id data) {
+
+            NSArray* result = (NSArray*)data;
+            if (result.count == 0) {
+                refreshFlag = NO;
+                return;
+            }
+
+            for (NSDictionary* dict in result) {
+                MJImage* image = [[MJImage alloc] initWithURL:dict[@"url"]];
+                [self.images addObject:image];
+            }
+            [self.collectionView reloadData];
+            currentPageNum++;
+        }
+        failure:^(MJGankHTTPManager* manager, NSError* error) {
+            NSLog(@"%@", error);
+        }];
 }
 
 @end

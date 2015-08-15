@@ -34,6 +34,8 @@
 {
     NSString* url = [[NSString stringWithFormat:CATEGORYURL, type, (unsigned long)num, (unsigned long)pageNum] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
+    NSLog(@"%@", url);
+
     [[self JSONRequestOperationManager] GET:url
         parameters:nil
         success:^(AFHTTPRequestOperation* operation, id responseObject) {

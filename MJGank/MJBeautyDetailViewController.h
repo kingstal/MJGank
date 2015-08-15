@@ -18,7 +18,6 @@
 
 @interface MJBeautyDetailViewController : UIViewController
 
-//@property (nonatomic, strong) MJImage* image;
 @property (nonatomic, strong) NSArray* images;
 @property (nonatomic, assign) NSInteger currentIndex;
 @property (nonatomic, strong) UIImageView* imageView;
