@@ -18,4 +18,6 @@ typedef void (^MJGankHTTPManagerSuccessBlock)(MJGankHTTPManager* manager, id dat
 
 - (void)getDataWithType:(NSString*)type num:(NSUInteger)num pageNum:(NSUInteger)pageNum success:(MJGankHTTPManagerSuccessBlock)successBlock failure:(MJGankHTTPManagerErrorBlock)errorBlock;
 
+- (void)getDataWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day success:(MJGankHTTPManagerSuccessBlock)successBlock failure:(MJGankHTTPManagerErrorBlock)errorBlock;
+
 @end

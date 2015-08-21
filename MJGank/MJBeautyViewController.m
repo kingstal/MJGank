@@ -14,6 +14,7 @@
 #import "MJMagicMovePresentTransition.h"
 #import "NormalDismissAnimation.h"
 #import "MJRefresh.h"
+#import "MBProgressHUD.h"
 
 #define CELL_IDENTIFIER @"MJImageCollectionViewCell"
 
@@ -178,26 +179,35 @@
 
 - (void)getImagesByPageNum:(NSUInteger)pageNum
 {
-    [[MJGankHTTPManager sharedManager] getDataWithType:@"福利"
-        num:10
-        pageNum:pageNum
-        success:^(MJGankHTTPManager* manager, id data) {
+    MBProgressHUD* hud = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:hud];
 
-            NSArray* result = (NSArray*)data;
-            if (result.count == 0) {
-                refreshFlag = NO;
-                return;
-            }
+    [hud showAnimated:YES
+        whileExecutingBlock:^{
+            [[MJGankHTTPManager sharedManager] getDataWithType:@"福利"
+                num:10
+                pageNum:pageNum
+                success:^(MJGankHTTPManager* manager, id data) {
 
-            for (NSDictionary* dict in result) {
-                MJImage* image = [[MJImage alloc] initWithURL:dict[@"url"]];
-                [self.images addObject:image];
-            }
-            [self.collectionView reloadData];
-            currentPageNum++;
+                    NSArray* result = (NSArray*)data;
+                    if (result.count == 0) {
+                        refreshFlag = NO;
+                        return;
+                    }
+
+                    for (NSDictionary* dict in result) {
+                        MJImage* image = [[MJImage alloc] initWithURL:dict[@"url"]];
+                        [self.images addObject:image];
+                    }
+                    [self.collectionView reloadData];
+                    currentPageNum++;
+                }
+                failure:^(MJGankHTTPManager* manager, NSError* error) {
+                    NSLog(@"%@", error);
+                }];
         }
-        failure:^(MJGankHTTPManager* manager, NSError* error) {
-            NSLog(@"%@", error);
+        completionBlock:^{
+            [hud removeFromSuperview];
         }];
 }
 

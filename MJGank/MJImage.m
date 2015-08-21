@@ -20,11 +20,4 @@
     return self;
 }
 
-//- (void)setUrl:(NSString*)url
-//{
-//    _url = url;
-//    CGSize size = CGSizeMake(arc4random() % 50 + 50, arc4random() % 50 + 50);
-//    _size = size;
-//}
-
 @end

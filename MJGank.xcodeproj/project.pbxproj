@@ -10,7 +10,7 @@
 		8E365A9F1B78894900E562C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365A9E1B78894900E562C0 /* main.m */; };
 		8E365AA21B78894900E562C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365AA11B78894900E562C0 /* AppDelegate.m */; };
 		8E365AA51B78894900E562C0 /* MJBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365AA41B78894900E562C0 /* MJBeautyViewController.m */; };
-		8E365AA81B78894900E562C0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365AA71B78894900E562C0 /* SecondViewController.m */; };
+		8E365AA81B78894900E562C0 /* MJEverydayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E365AA71B78894900E562C0 /* MJEverydayViewController.m */; };
 		8E365AAB1B78894900E562C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E365AA91B78894900E562C0 /* Main.storyboard */; };
 		8E365AAD1B78894900E562C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E365AAC1B78894900E562C0 /* Images.xcassets */; };
 		8E365AB01B78894900E562C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E365AAE1B78894900E562C0 /* LaunchScreen.xib */; };
@@ -22,6 +22,8 @@
 		8E6755BD1B7F1A3700514192 /* MJBeautyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755BC1B7F1A3700514192 /* MJBeautyDetailViewController.m */; };
 		8E6755C01B7F22C600514192 /* MJMagicMovePresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755BF1B7F22C600514192 /* MJMagicMovePresentTransition.m */; };
 		8E6755CD1B7F681000514192 /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6755CC1B7F681000514192 /* NormalDismissAnimation.m */; };
+		8E9E7DAD1B8086BA0059FD37 /* MJBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E7DAC1B8086BA0059FD37 /* MJBrowserViewController.m */; };
+		8EB1E8E71B8037CC002506ED /* MJData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1E8E61B8037CC002506ED /* MJData.m */; };
 		C533C65153815A065F19FE74 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 225733985829D2CC85FE7871 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +47,8 @@
 		8E365AA11B78894900E562C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E365AA31B78894900E562C0 /* MJBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJBeautyViewController.h; sourceTree = "<group>"; };
 		8E365AA41B78894900E562C0 /* MJBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJBeautyViewController.m; sourceTree = "<group>"; };
-		8E365AA61B78894900E562C0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		8E365AA71B78894900E562C0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8E365AA61B78894900E562C0 /* MJEverydayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJEverydayViewController.h; sourceTree = "<group>"; };
+		8E365AA71B78894900E562C0 /* MJEverydayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJEverydayViewController.m; sourceTree = "<group>"; };
 		8E365AAA1B78894900E562C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E365AAC1B78894900E562C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8E365AAF1B78894900E562C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -67,6 +69,10 @@
 		8E6755BF1B7F22C600514192 /* MJMagicMovePresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMagicMovePresentTransition.m; sourceTree = "<group>"; };
 		8E6755CB1B7F681000514192 /* NormalDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDismissAnimation.h; sourceTree = "<group>"; };
 		8E6755CC1B7F681000514192 /* NormalDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDismissAnimation.m; sourceTree = "<group>"; };
+		8E9E7DAB1B8086BA0059FD37 /* MJBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBrowserViewController.h; sourceTree = "<group>"; };
+		8E9E7DAC1B8086BA0059FD37 /* MJBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBrowserViewController.m; sourceTree = "<group>"; };
+		8EB1E8E51B8037CC002506ED /* MJData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJData.h; sourceTree = "<group>"; };
+		8EB1E8E61B8037CC002506ED /* MJData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJData.m; sourceTree = "<group>"; };
 		E136FA6EE5F574B68D11945E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,8 +192,10 @@
 				8E365AA41B78894900E562C0 /* MJBeautyViewController.m */,
 				8E6755BB1B7F1A3700514192 /* MJBeautyDetailViewController.h */,
 				8E6755BC1B7F1A3700514192 /* MJBeautyDetailViewController.m */,
-				8E365AA61B78894900E562C0 /* SecondViewController.h */,
-				8E365AA71B78894900E562C0 /* SecondViewController.m */,
+				8E365AA61B78894900E562C0 /* MJEverydayViewController.h */,
+				8E365AA71B78894900E562C0 /* MJEverydayViewController.m */,
+				8E9E7DAB1B8086BA0059FD37 /* MJBrowserViewController.h */,
+				8E9E7DAC1B8086BA0059FD37 /* MJBrowserViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -210,6 +218,8 @@
 			children = (
 				8E6755B81B7F0A5F00514192 /* MJImage.h */,
 				8E6755B91B7F0A5F00514192 /* MJImage.m */,
+				8EB1E8E51B8037CC002506ED /* MJData.h */,
+				8EB1E8E61B8037CC002506ED /* MJData.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -358,13 +368,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB1E8E71B8037CC002506ED /* MJData.m in Sources */,
 				8E6755CD1B7F681000514192 /* NormalDismissAnimation.m in Sources */,
 				8E6755B71B7F03E100514192 /* MJImageCollectionViewCell.m in Sources */,
 				8E6755A91B7E3DA100514192 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				8E6755B41B7EF7D100514192 /* MJGankHTTPManager.m in Sources */,
-				8E365AA81B78894900E562C0 /* SecondViewController.m in Sources */,
+				8E365AA81B78894900E562C0 /* MJEverydayViewController.m in Sources */,
 				8E6755C01B7F22C600514192 /* MJMagicMovePresentTransition.m in Sources */,
 				8E365AA21B78894900E562C0 /* AppDelegate.m in Sources */,
+				8E9E7DAD1B8086BA0059FD37 /* MJBrowserViewController.m in Sources */,
 				8E365AA51B78894900E562C0 /* MJBeautyViewController.m in Sources */,
 				8E6755BA1B7F0A5F00514192 /* MJImage.m in Sources */,
 				8E6755BD1B7F1A3700514192 /* MJBeautyDetailViewController.m in Sources */,
